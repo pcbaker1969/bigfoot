@@ -1,0 +1,26 @@
+<h1>Login to Bigfoot Hunters of Northern VA</h1>
+<div class="container">
+   <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-4">
+            Username: 
+            <input type="text" name="username" [(ngModel)]="username">
+         </div>
+         <div class="col-lg-4">
+            Password: 
+            <input type="password" name="password" [(ngModel)]="password">
+         </div>
+ 
+         <div class="col-lg-1">
+            <button (click)=handleLogin() class="btn btn-success">Login</button>
+         </div>
+         <div class="col-lg-3">
+
+         </div>
+      </div>
+      <div class="emptyline">
+
+      </div>
+   </div>
+</div>

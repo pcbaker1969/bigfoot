@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Bigfoot Hunters</a>
+    <button class="navbar-toggler d-lg-none" type="button" 
+        (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" 
+        aria-controls="navbarsExampleDefault" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/welcome/pete">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                  <a class="nav-link" routerLink="/sightings">Sightings<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>

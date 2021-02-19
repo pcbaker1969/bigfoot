@@ -1,0 +1,23 @@
+<h1>Bigfoot Sightings</h1>
+<div class="container">
+<table class="sightings">
+    <caption>NoVA Bigfoot Hunter Sightings</caption>
+    <thead>
+        <tr>
+            <th>username</th><th>City</th>
+            <th>Latitude</th><th>Longitude</th>
+            <th>Description</th><th>Date Sighted</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sighting of sightings">
+            <td>{{sighting.username}}</td>
+            <td>{{sighting.city}}</td>
+            <td>{{sighting.lat}}</td>
+            <td>{{sighting.long}}</td>
+            <td>{{sighting.description}}</td>
+            <td>{{sighting.sightDate}}</td>
+        </tr>       
+    </tbody>
+</table>
+</div>
