@@ -12,6 +12,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { SightingComponent } from './sighting/sighting.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     ErrorComponent,
     WelcomeComponent,
     SightingComponent,
-    FooterComponent
+    FooterComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

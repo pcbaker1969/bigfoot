@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'welcome/:name', component: WelcomeComponent },
   { path: 'sightings', component: SightingsListComponent},
+  { path: 'logout', component: LoginComponent },
   { path: '**', component: ErrorComponent}
 ];
 
