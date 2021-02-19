@@ -12,6 +12,7 @@ export class LogoutComponent implements OnInit {
     HardcodedAuthenticationService) { }
 
   ngOnInit(): void {
+    console.log("logging out...")
     this.hardcodedAuthenticationService.logout();
   }
 }

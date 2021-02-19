@@ -13,6 +13,7 @@ import { SightingComponent } from './sighting/sighting.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LogoutComponent } from './logout/logout.component';
     WelcomeComponent,
     SightingComponent,
     FooterComponent,
-    LogoutComponent
+    LogoutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

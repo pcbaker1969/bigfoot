@@ -8,7 +8,7 @@ export class HardcodedAuthenticationService {
   constructor() { }
 
   authenticate(username: string, password: string) {
-    if (username === 'pcbaker' && password === 'SimTek2018') {
+    if (username === 'admin' && password === 'changeit') {
       sessionStorage.setItem('authenticatedUser', username);
       return true;
     }
@@ -21,6 +21,6 @@ export class HardcodedAuthenticationService {
   }
 
   logout() {
-    sessionStorage.removeItem('authenticatedUesr');
+    sessionStorage.removeItem('authenticatedUser');
   }
 }
